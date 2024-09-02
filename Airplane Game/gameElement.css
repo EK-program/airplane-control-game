@@ -1,0 +1,69 @@
+
+#game-container {
+width: 1200px;
+height: 700px;
+position: relative;
+border: 1px solid #000;
+margin: 0 auto;
+z-index: 1;
+}
+
+.airplane {
+position: absolute;
+transition: transform 0.2s ease-in-out;
+}
+
+.bullet {
+width: 10px;
+height: 5px;
+background-color: red;
+position: absolute;
+z-index: 3;
+}
+
+#bullet-container {
+position: absolute;
+top: 0;
+left: 0;
+width: 800px;
+height: 600px;
+z-index: 2;
+}
+
+.scoreboard {
+position: absolute;
+top: 10px;
+font-size: 18px;
+}
+
+#player1-score {
+left: 10px;
+}
+
+#player2-score {
+right: 10px;
+}
+
+
+#start-button {
+position: absolute;
+top: 10px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+padding: 5px 10px;
+cursor: pointer;
+z-index: 4;
+}
+.startButton{
+    border-radius: 10px;
+    background-color: aqua;
+    transition: ease background-color 0.3s ;
+}
+.startButton:hover {
+    background-color: blueviolet;
+
+}
+.startButton:active{
+    background-color: beige;
+}
